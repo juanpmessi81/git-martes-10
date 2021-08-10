@@ -1,0 +1,76 @@
+/*Content First - Mobile First*/
+    /*Reglas Generales*/
+        *{
+            box-sizing: border-box;
+            font-family: 'segoe ui', 'calibri', sans-serif;
+        }
+        body,
+        h1,
+        h2,
+        h3,
+        .menu{
+            margin:0;
+        }
+    /*Navegacion*/
+        nav{
+            position: sticky;
+            top: 0;
+            z-index: 2;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            background: linear-gradient(#d3c, #48c);
+        }
+        nav a{
+            display: block;
+            color: #eee;
+            text-decoration: none;
+            padding: .5rem;
+        }
+        .logo{
+            font-weight: bold;
+            text-transform: uppercase;
+        }
+        .btn{
+            margin: .5rem;
+            border-radius: .25rem;
+            border: .1rem solid #eee;
+            color: #eee;
+            background-color: transparent;
+        }
+        .btn:hover{
+            color:#48c;
+            background-color: #eee;
+        }
+        .menu{
+            width:100%;
+            max-height: 0;
+            padding: 0;
+            list-style:none;
+            overflow: hidden;
+        }
+        .menu.active{
+            max-height: 600px;
+            padding: 0;
+            list-style:none;
+        }
+        .menu a:hover{
+            background-color: #3338;
+        }
+/*Small Devices*/
+
+/*Medium Devices*/
+@media screen and (min-width:768px){
+    nav .btn{ display: none;}
+    .menu{
+        width:auto;
+        max-height: 600px;
+        display: flex;
+    }
+}
+/*Large Devices*/
+@media screen and (min-width:992px){
+    nav{ justify-content: space-around;}
+}
+/*Extra Large Devices*/
