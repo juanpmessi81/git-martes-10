@@ -50,6 +50,20 @@
                 <li><strong>git restore --staged &lt;file></strong> remueve los cambios de los archivos agregados al INDEX</li>
             </ul>
         </article>
+        <article>
+            <h3>Repository</h3>
+            <p>
+                Area donde se almacenan los cambios, mediante confirmaciones, en formato BLOB(Binary Large Object File). Solamente se confirman las modificaciones agregadas al INDEX; y mediante apuntadores podemos navegar dentro del historial.
+            </p>
+            <ul>
+                <li><strong>git commit</strong> abre el editor para realizar la confirmacion</li>
+                <li><strong>git blame &lt;file></strong> muestra linea por linea los autores de las confirmaciones, en caso que existan</li>
+                <li><strong>git log</strong> muestra el historial de confirmaciones en orden descendente</li>
+                <li><strong>git remote add &lt;alias> &lt;url></strong> agrega una direccion remota, asignandole un alias</li>
+                <li><strong>git fetch &lt;remote></strong> obtiene el historial de cambios de un repositorio remoto</li>
+                <li><strong>git push &lt;remote> &lt;url></strong> envia a un repositorio remoto los cambios</li>
+            </ul>
+        </article>
     </section>
 </body>
 </html>
