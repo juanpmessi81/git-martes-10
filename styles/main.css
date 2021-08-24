@@ -8,6 +8,7 @@
         h1,
         h2,
         h3,
+        header p,
         .menu{
             margin:0;
         }
@@ -55,6 +56,18 @@
         }
         .menu a:hover{
             background-color: #3338;
+        }
+    /*Header*/
+        header{
+            display: grid;
+            height: min(100vh, 720px);
+            justify-content: center;
+            align-content: center;
+            color:#eee;
+            text-align: center;
+            text-shadow: 0 0 .5rem #eee;
+            background-color: #333;
+            font-size: min( calc(2vw + .8rem), 5rem );
         }
 /*Small Devices*/
 
