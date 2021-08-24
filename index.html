@@ -96,6 +96,19 @@
                 <li><strong>git merge &lt;branch></strong> integra en la rama actual los cambios de la rama seleccionada.</li>
             </ul>
         </article>
+        <article>
+            <h3>TAG</h3>
+            <p>
+                Apuntador estatico que siempre se corresponde con un commit determinado, se utiliza principalmente para el versionado del proyecto y nos permite desplazarnos mucho mas facilmente en el historial de cambios. Normalmente se utiliza una estructura similar a <em>v.n.n.n</em> donde se especifica el numero de version principal, compilacion o subversion y correcciones o revisiones.
+            </p>
+            <ul class="commands">
+                <li><strong>git tag &lt;name></strong> crea una etiqueta sobre el commit actual</li>
+                <li><strong>git tag -l</strong> lista las etiquetas asignadas localmente</li>
+                <li><strong>git tag -d &lt;tag></strong> elimina la etiqueta seleccionada</li>
+                <li><strong>git tag &lt;old> &lt;new></strong> agrega una etiqueta en la misma posicion que la seleccionada</li>
+                <li><strong>git push &lt;remote> --tags</strong> envia las etiquetas al repositorio remoto</li>
+            </ul>
+        </article>
     </section>
 </body>
 </html>
