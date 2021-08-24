@@ -112,6 +112,19 @@
                 <li><strong>git push &lt;remote> --tags</strong> envia las etiquetas al repositorio remoto</li>
             </ul>
         </article>
+        <article>
+            <h3>STASH</h3>
+            <p>
+                Apuntador que hace referencia a un commit y su INDEX en un punto determinado dentro del historial. Se conoce tambien, como la zona o pila temporal de cambios. Se utiliza para desplazarnos dentro del historial de cambios, cuando tenemos cambios pendientes en el INDEX y estos no ameritan un commit. Al reaplicar los cambios se realiza una operacion merge a la inversa.
+            </p>
+            <ul class="commands">
+                <li><strong>git stash</strong> agrega los cambios del INDEX a la zona temporal.</li>
+                <li><strong>git stash apply @stash{n}</strong> aplica los cambios de la zona temporal</li>
+                <li><strong>git stash drop @stash{n}</strong> elimina las referencias de la zona temporal</li>
+                <li><strong>git stash pop @stash{n}</strong> aplica los cambios y los elimina de la zona temporal</li>
+                <li><strong>git stash list</strong> lista las referencias de la zona temporal</li>
+            </ul>
+        </article>
     </section>
     <footer>
         <table class="colabs">
