@@ -134,9 +134,9 @@
                 Comando que permite la eliminacion de commits del historial de cambios, podemos utilizarlo con diferentes parametros, segun lo que necesitemos. Podemos eliminar solamente los commits, reestablecer el proyecto a un punto anterior o simplemente deshacer los cambios del INDEX. Este comando elimina desde el ultimo commit al seleccionado.
             </p>
             <ul class="commands">
-                <li><strong>git reset --soft &lt;ref></strong> Valor predeterminado, que solamente elimina el conjunto de commits intermedios sin  reestablecer el proyecto.</li>
-                <li><strong>git reset --mixed &lt;ref></strong></li>
-                <li><strong>git reset &lt;ref></strong></li>
+                <li><strong>git reset --soft &lt;ref></strong> Valor predeterminado, que solamente elimina los commits sin  reestablecer el proyecto.</li>
+                <li><strong>git reset --mixed &lt;ref></strong> Elimina los commits y reestablece los cambios del INDEX a dicho punto de control.</li>
+                <li><strong>git reset --hard &lt;ref></strong> Reestablece el proyecto completo hasta el commit seleccionado</li>
                 <li><strong>git reset &lt;ref></strong></li>
             </ul>
         </article>
