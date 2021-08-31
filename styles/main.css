@@ -98,8 +98,16 @@
             z-index: -1;
             border:none;
         }
+        .map.active,
+        .map.active + .btn{
+            position: fixed;
+            z-index: 2;
+            opacity: .9;
+        }
         footer .btn{
             position: absolute;
+            min-height: 2.5rem;
+            min-width: 2.5rem;
             top: .5rem;
             right: .5rem;
             background-color: #333;
