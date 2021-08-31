@@ -126,6 +126,44 @@
             </ul>
         </article>
     </section>
+    <section>
+        <h2>Control de Cambios</h2>
+        <article>
+            <h3>RESET</h3>
+            <p>
+                Comando que permite la eliminacion de commits del historial, reestablecer el proyecto a un punto anterior o simplemente deshacer los cambios del INDEX. Este comando elimina desde el ultimo commit al seleccionado. Es bastante practico cuando necesitamos deshacer cambios, siempre y cuando estos no hayan sido subidos al respositorio remoto.
+            </p>
+            <ul class="commands">
+                <li><strong>git reset --soft &lt;ref></strong> Valor predeterminado, que solamente elimina los commits sin  reestablecer el proyecto.</li>
+                <li><strong>git reset --mixed &lt;ref></strong> Elimina los commits y reestablece los cambios del INDEX a dicho punto de control.</li>
+                <li><strong>git reset --hard &lt;ref></strong> Reestablece el proyecto completo hasta el commit seleccionado.</li>
+                <li><strong>git reset &lt;ref> -- &lt;file></strong> Reestablece un archivo a como estaba en el commit referenciado.</li>
+            </ul>
+        </article>
+        <article>
+            <h3>REVERT</h3>
+            <p>
+                Cuando los cambios fueron subidos a nuestro repositorio remoto, por mas que se reestablezca el proyecto con <em>git reset</em>, git solicitara al usuario que haga PULL de los cambios debido a la diferencia de commits y por consecuente utilizara la estrategia fast-forward o un merge segun corresponda. Para este tipo de situacion podemos utilizar el comando <strong>revert</strong> que genera un commit con la operacion contraria del commit seleccionado.
+            </p>
+            <ul class="commands">
+                <li><strong>git revert &lt;ref></strong> Genera un commit con las operacion inversas del seleecionado.</li>
+                <li><strong>git revert --abort</strong> Cancela la reversion en caso de ocurrir un conflicto.</li>
+                <li><strong>git revert --continue</strong> Continua con la reversion del commit despues de resolver el conflicto.</li>
+            </ul>
+        </article>
+        <article>
+            <h3>BISECT</h3>
+            <p>
+                Comando que permite el analisis de commits dentro del historial de manera binaria, simplemente debemos indicar en que commit verificamos que el codigo no funciona correctamente y luego debemos indicar en cual el codifo funcionaba. Luego git movera el apuntador HEAD entre diferentes commits para que el usuario identifique si es funcional o no funcional y tras un par de confirmaciones, git identificara en cual de todos los cambios se introdujo el error.
+            </p>
+            <ul class="commands">
+                <li><strong>git bisect start</strong> Inicia la diseccion binaria del historia de cambios</li>
+                <li><strong>git bisect bad</strong> Indica que el commit actual no es funcional</li>
+                <li><strong>git bisect good</strong> Indica que el commit actual es funcional</li>
+                <li><strong>git bisect reset</strong> Una vez finalizado el analisis, concluye con el proceso.</li>
+            </ul>
+        </article>
+    </section>
     <footer>
         <table class="colabs">
             <caption>Colaboradores</caption>
