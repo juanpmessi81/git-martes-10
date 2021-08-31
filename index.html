@@ -151,8 +151,25 @@
                 <li><strong>git revert --continue</strong> Continua con la reversion del commit despues de resolver el conflicto.</li>
             </ul>
         </article>
+        <article>
+            <h3>BISECT</h3>
+            <p>
+                Comando que permite el analisis de commits dentro del historial de manera binaria, simplemente debemos indicar en que commit verificamos que el codigo no funciona correctamente y luego debemos indicar en cual el codifo funcionaba. Luego git movera el apuntador HEAD entre diferentes commits para que el usuario identifique si es funcional o no funcional y tras un par de confirmaciones, git identificara en cual de todos los cambios se introdujo el error.
+            </p>
+            <ul class="commands">
+                <li><strong>git bisect start</strong> Inicia la diseccion binaria del historia de cambios</li>
+                <li><strong>git bisect bad</strong> Indica que el commit actual no es funcional</li>
+                <li><strong>git bisect good</strong> Indica que el commit actual es funcional</li>
+                <li><strong>git bisect reset</strong> Una vez finalizado el analisis, concluye con el proceso.</li>
+            </ul>
+        </article>
     </section>
     <footer>
+        <div class="social">
+            <a href="https://git.com/c215714n/git-martes-10" target="_blank">GitHub</a>
+            <a href="https://git.com/c215714n/git-martes-10" target="_blank">GitLab</a>
+            <a href="https://git.com/c215714n/git-martes-10" target="_blank">BitBucket</a>
+        </div>
         <table class="colabs">
             <caption>Colaboradores</caption>
             <thead>
@@ -188,6 +205,7 @@
                     <td>rbn-prz</td>
                     <td>rbn.prz@hotmail.com</td>
                 </tr>
+                <tr>
                     <td>Martin Sánchez</td>
                     <td>msanchez616</td>
                     <td>martin.sah90@gmail.com</td>
@@ -196,6 +214,10 @@
                     <td>mpreiti</td>
                     <td>mpreiti@gmail.com</td>
                 </tr>
+                <tr>
+                    <td>Martin Sánchez</td>
+                    <td>msanchez616</td>
+                    <td>martin.sah90@gmail.com</td>
                 </tr>
                     <td>Juan Pablo Messi</td>
                     <td>juanpmessi81</td>
@@ -227,12 +249,23 @@
                     <td>lujulu.jgl@gmail.com</td>
                 </tr>
                 <tr>
+                    <td>Lucas A. Furno</td>
+                    <td>lucasafurno</td>
+                    <td>lucas_yenkoz28@hotmail.com</td>
+                </tr>
+                <tr>
                     <td>Federico Galan</td>
                     <td>fedeG</td>
                     <td>fegv.2@hotmail.com.ar</td>
                 </tr>
             </tbody>
         </table>
+        <div class="example">            
+            <h2>¿Cual es correcto profe? :c</h2>
+            <img src="https://res.cloudinary.com/practicaldev/image/fetch/s--NUSRQ-3J--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_auto%2Cw_880/https://i.redd.it/5iphhycu0io11.png" alt="">
+            <a href="https://ibb.co/D76n4Qn"><img src="https://i.ibb.co/MRjLn7L/este-profe-we.png" alt="este-profe-we"></a>
+            <strong>Muchas Gracias</strong>
+        </div>
         <iframe class="map"
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3284.068715758423!2d-58.37805708519527!3d-34.602423864935744!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bccacc473596c3%3A0x568d6d5f7f1f535d!2sEducaci%C3%B3nIT!5e0!3m2!1ses!2sar!4v1630419355778!5m2!1ses!2sar" 
             loading="lazy">
@@ -241,6 +274,5 @@
     </footer>
     <!-- Scripts -->
     <script src="scripts/main.js"></script>
-    <a href="https://ibb.co/D76n4Qn"><img src="https://i.ibb.co/MRjLn7L/este-profe-we.png" alt="este-profe-we" border="0"></a>
 </body>
 </html>
