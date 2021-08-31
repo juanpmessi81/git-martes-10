@@ -126,6 +126,21 @@
             </ul>
         </article>
     </section>
+    <section>
+        <h2>Control de Cambios</h2>
+        <article>
+            <h3>RESET</h3>
+            <p>
+                Comando que permite la eliminacion de commits del historial, reestablecer el proyecto a un punto anterior o simplemente deshacer los cambios del INDEX. Este comando elimina desde el ultimo commit al seleccionado. Es bastante practico cuando necesitamos deshacer cambios, siempre y cuando estos no hayan sido subidos al respositorio remoto.
+            </p>
+            <ul class="commands">
+                <li><strong>git reset --soft &lt;ref></strong> Valor predeterminado, que solamente elimina los commits sin  reestablecer el proyecto.</li>
+                <li><strong>git reset --mixed &lt;ref></strong> Elimina los commits y reestablece los cambios del INDEX a dicho punto de control.</li>
+                <li><strong>git reset --hard &lt;ref></strong> Reestablece el proyecto completo hasta el commit seleccionado.</li>
+                <li><strong>git reset &lt;ref> -- &lt;file></strong> Reestablece un archivo a como estaba en el commit referenciado.</li>
+            </ul>
+        </article>
+    </section>
     <footer>
         <table class="colabs">
             <caption>Colaboradores</caption>
